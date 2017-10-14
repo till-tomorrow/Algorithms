@@ -1,0 +1,18 @@
+//Sum Of First N Natural Numbers using Recursion
+
+#include<iostream>
+using namespace std;
+
+int sumOfNNaturalNumbers(int n){
+if( n == 0)
+    return 0;
+
+if(n == 1){
+    return 1;
+}
+
+return n + sumOfNNaturalNumbers(n-1);
+}
+int main(){
+    cout<<"sum of first 5 natural numbers is: "<< sumOfNNaturalNumbers(5);
+}
